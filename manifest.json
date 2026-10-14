@@ -1,0 +1,12 @@
+{
+  "id": "evilution66.hermes-swapper",
+  "name": "Hermes Model Swapper",
+  "description": "Hot-swap between Strata (Qwen) and LM Studio (Gemma 4) for Hermes Agent.",
+  "author": "Evilutionary66",
+  "version": "1.0.0",
+  "main": "BarWidget.QML",
+  "capabilities": {
+    "bar_widget": true,
+    "hot_swap": true
+  }
+}
