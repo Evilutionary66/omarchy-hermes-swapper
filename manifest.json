@@ -1,12 +1,22 @@
 {
-  "id": "omarchy.hermes-swapper",
+  "schemaVersion": 1,
+  "id": "hermes-model-swapper",
   "name": "Hermes Model Swapper",
-  "description": "Hot-swap between Strata (Qwen) and LM Studio (Gemma 4) for Hermes Agent.",
+  "description": "Bar widget that hot-swaps the Hermes Agent between local model servers. Left click cycles to the next profile, middle click re-reads the live Hermes config. Install: omarchy plugin add https://github.com/Evilutionary66/omarchy-hermes-swapper --enable",
+  "homepage": "https://github.com/Evilutionary66/omarchy-hermes-swapper",
+  "license": "MIT",
   "author": "Evilutionary66",
-  "version": "1.0.0",
-  "main": "src/main.js",
-  "capabilities": {
-    "bar_widget": true,
-    "hot_swap": true
+  "version": "2.0.0",
+  "aliases": ["hermes-swapper", "model-swapper", "hermes-model"],
+  "kinds": ["bar-widget"],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Hermes Model Swapper",
+    "description": "Swap Hermes Agent between LM Studio and Strata without leaving the bar.",
+    "category": "AI",
+    "allowMultiple": false,
+    "defaultSection": "right"
   }
 }
